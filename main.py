@@ -6,11 +6,11 @@ from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 
 from load_data import load_frame_heatmap_data
-from gaze_dataset import GazeDataset
+from WoMdata import WoMDataset
 from train_teacher import train_teacher_epoch, eval_teacher
 from train_student import train_student_epoch, eval_student
 from eval import eval_student
-from memgaze_models import TeacherNet, StudentNet
+from MemGaze import TeacherNet, StudentNet
 
 
 SEED = 42
